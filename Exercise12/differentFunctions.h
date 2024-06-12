@@ -1,9 +1,9 @@
 
-void passByValue(int a, int b);
-void passByConstValue(const int a, const int b);
-void passByPointer(int* a, int* b);
-void passByPointerToConst(const int* a, const int* b);
-void passByConstPointerToConst(const int* const a, const int* const b);
-void passByReference(int& a, int& b);
-void passByConstReference(const int& a, const int& b);
+void passByValue(int a);
+void passByConstValue(const int a);
+void passByPointer(int* a);
+void passByPointerToConst(const int* a);
+void passByConstPointerToConst(const int* const a);
+void passByReference(int& a);
+void passByConstReference(const int& a);
 
