@@ -1,4 +1,5 @@
 #include <iostream>
+#include "differentFunctions.h"
 
 /* Pass by value is OK if the parameters are fundamental types like int, double..
 Not recommended for relatively large & heavy types (user definded types).
@@ -57,4 +58,12 @@ void passByConstReference(const int& a){
   std::cout << "Pass by const reference" << std::endl;
   std::cout << "value a is: " << a << std::endl;
 
+}
+
+
+constexpr int square(int a) {
+   return a * a;
+}
+consteval int triangle(int a) {
+  return a * (a + 1) / 2;
 }

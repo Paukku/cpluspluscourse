@@ -44,9 +44,13 @@ int main () {
   std::cout << "The value after it goes into the function 'passByReference': " << a << std::endl << std::endl;
 
 
-  std::cout << "The value before it goes into the function 'passByConstReference': " << a << std::endl;
-  passByConstReference(a);
-  std::cout << "The value after it goes into the function 'passByConstReference': " << a << std::endl;
+  std::cout << "The value before it goes into the constexpr function 'square': " << a << std::endl;
+  int result = square(5);
+  std::cout << "The value after it goes into the constexpr function 'square': " << a << std::endl;
+
+ // std::cout << "The value before it goes into the consteval function 'triangle': " << a << std::endl;
+  //constexpr int result2 = triangle(5);
+  //std::cout << "The value after it goes into the consteval function 'triangle': " << a << std::endl;
 
 
   return 0;
